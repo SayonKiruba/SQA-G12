@@ -1,0 +1,6 @@
+login
+Admin001
+create
+Seller01
+sell-standard
+logout

@@ -1,0 +1,6 @@
+login
+User001
+create
+NewUser
+full-standard
+logout

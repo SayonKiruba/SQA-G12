@@ -1,0 +1,6 @@
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created Buyer01
+Logged out

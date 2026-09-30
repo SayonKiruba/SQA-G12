@@ -1,0 +1,5 @@
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Deleted User01
+Logged out

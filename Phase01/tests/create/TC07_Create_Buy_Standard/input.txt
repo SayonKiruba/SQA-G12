@@ -1,0 +1,6 @@
+login
+Admin001
+create
+Buyer01
+buy-standard
+logout

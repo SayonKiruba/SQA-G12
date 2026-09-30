@@ -1,0 +1,6 @@
+login
+Admin001
+create
+SixteenCharacterX
+full-standard
+logout
