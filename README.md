@@ -1,8 +1,3 @@
-Our Repo For the SQA Lab
-Group members:
-- Manu
-- Sayon
-- Yusuf
 |Test ID:|Feature|Test Description|Status|
 |---|---|---|---|
 |TC01||||
@@ -38,6 +33,30 @@ Group members:
 |TC31_Refund_By_Non_Admin_Rejected||||
 |TC32_Refund_Invalid_Buyer||||
 |TC33_Refund_Invalid_Seller|Refund|||
+
+
+
+|Test ID:|Feature|Test Description|Status|
+|---|---|---|---|
+|TC34_Add_Credit_Standard|Add Credit|||
+|TC35_Add_Credit_Admin_To_Existing_User||||
+|TC36_Add_Cred||||
+|TC37||||
+|TC38|Add Credit|||
+|TC39||||
+|TC40||||
+|TC41||||
+|TC42||||
+|TC43||||
+|TC44||||
+|TC45||||
+|TC46||||
+|TC47||||
+|TC48||||
+
+
+
+
 
 
 
