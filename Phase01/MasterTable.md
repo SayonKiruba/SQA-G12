@@ -28,8 +28,7 @@
 | TC26_Buy_By_Sell_Standard_Rejected | Buy | Test to ensure that sell standard user accounts cannot buy games |
 | TC27_Buy_Nonexistent_Game | Buy | Test to ensure that users can only buy an existing game |
 | TC28_Buy_Insufficient_Credit | Buy | Test to ensure that users can only buy the game if they have enough credit |
-| TC29_Buy_Already_Owned_Game | Buy | Tests to ensure rejection if the user tries to buy a game they already have a copy of the game in their collection
- |
+| TC29_Buy_Already_Owned_Game | Buy | Tests to ensure rejection if the user tries to buy a game they already have a copy of the game in their collection|
 | TC30_Refund_Valid | Refund | Tests to ensure valid refund process is accepted |
 | TC31_Refund_By_Non_Admin_Rejected | Refund | Test to ensure non admin user accounts cannot complete refunds |
 | TC32_Refund_Invalid_Buyer | Refund | Tests to ensure the refund process is rejected if users input invalid buyer |
