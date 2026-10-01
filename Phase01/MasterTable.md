@@ -36,10 +36,10 @@
 | TC34_Add_Credit_Standard | Add Credit | Tests to ensure a valid add credit process for standard user accounts |
 | TC35_Add_Credit_Admin_To_Existing_User | Add Credit | Tests to ensure admin user accounts properly input existing users for add credit process |
 | TC36_Add_Credit_Admin_Invalid_User | Add Credit | Tests to ensure admin user accounts cannot add credit to invalid user accounts |
-| TC37_Add_Credit_Max_1000 | Add Credit | Tests to ensure users put valid amount of credit within the limit |
-| TC38_Add_Credit_Over_1000 | Add Credit | Tests to ensure users cannot input credit over the max limit  |
+| TC37_Add_Credit_Max_1000 | Add Credit | Tests to ensure valid amount of credit is accepted |
+| TC38_Add_Credit_Over_1000 | Add Credit | Tests to ensure over that users can not input over credit max  |
 | TC39_Invalid_Command | Command Prompt | Tests to ensure users are inputting valid command prompts |
-| TC40_Bad_Input_Does_Not_Crash | Input | Tests to ensure invalid prompts does not crash |
+| TC40_Bad_Input_Does_Not_Crash | Input | Tests to ensure invalid prompts does not crash system|
 | TC41_Daily_Transaction_End_Code | Daily Transaction File | Tests the production of transaction codes |
 | TC42_Transaction_Record_Create_Format | Daily Transaction File | Tests to ensure valid transaction format for create is accepted |
 | TC43_Transaction_Record_Sell_Format | Daily Transaction File | Tests to ensure valid transaction format for sell is accepted |
