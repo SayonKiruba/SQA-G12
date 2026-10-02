@@ -1,0 +1,6 @@
+Persona 4 Golden          User001          020.00
+Elden Ring                User001          080.00
+Chrono Trigger            User001          030.00
+Stardew Valley            User001          070.00
+Pokémon HeartGold         User001          050.00
+END
