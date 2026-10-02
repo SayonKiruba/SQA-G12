@@ -1,0 +1,5 @@
+Enter Username:
+Logged in as Buyer01
+Enter Game Name:
+Invalid: Game does not exist
+Logged out

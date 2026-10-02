@@ -1,0 +1,5 @@
+Enter Username:
+Logged in as Buyer02
+Enter Game Name:
+Invalid: Insufficient credit
+Logged out

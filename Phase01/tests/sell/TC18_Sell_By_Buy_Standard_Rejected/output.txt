@@ -1,0 +1,6 @@
+Enter Username:
+Logged in as Buyer01
+Invalid: Cannot sell from a buyer account
+Invalid: Cannot sell from a buyer account
+Invalid: Cannot sell from a buyer account
+Logged out
