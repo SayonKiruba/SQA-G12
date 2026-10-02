@@ -1,0 +1,9 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Unsuccssesful - Requires Positive Credit Amount
+Enter Command:

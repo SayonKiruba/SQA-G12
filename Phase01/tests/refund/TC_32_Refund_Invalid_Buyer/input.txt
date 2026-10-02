@@ -2,3 +2,4 @@ Login
 Valid_Admin_Name
 Refund
 Invalid_Buyer_Name
+Logout
