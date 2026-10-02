@@ -1,5 +1,6 @@
-login
-Buyer03
-buy
-Hades
-logout
+Login
+Valid_Buyer_Nam
+Buy
+Owned_Game_Title
+Valid_Seller_Nm
+Logout

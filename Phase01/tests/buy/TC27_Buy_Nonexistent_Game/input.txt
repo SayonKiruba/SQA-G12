@@ -1,5 +1,6 @@
-login
-Buyer01
-buy
-Nonexistent Game
-logout
+Login
+Valid_Buyer_Nam
+Buy
+Non_Exist_Game
+Valid_Seller_Nm
+Logout

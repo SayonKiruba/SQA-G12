@@ -1,5 +1,6 @@
-login
-Buyer01
-buy
-Persona 4 Golden
-logout
+Login
+Valid_Buyer_Nam
+Buy
+Game_Title_Name
+Valid_Seller_Nm
+Logout

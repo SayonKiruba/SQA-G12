@@ -1,5 +1,6 @@
-login
-Buyer02
-buy
-Elden Ring
-logout
+Login
+Valid_Buyer_Nam
+Buy
+Expensive_Game
+Valid_Seller_Nm
+Logout
