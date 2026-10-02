@@ -1,6 +1,6 @@
-login
-Seller01
-sell
-Chrono Trigger
-1000.00
-logout
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Invalid! over price limit
+Logged out

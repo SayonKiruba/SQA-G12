@@ -1,13 +1,13 @@
-User01
-Seller01
-Buyer01
-NewUser
-Buyer03
-Buyer02
-Valid_Std_Name_Cred999998.99
-Valid_Standard_Name
-Valid_Admin_Name
-Admin01
-Admin001
-User001
-Username
+User01 FS 10000
+Seller01 SS 10000
+Buyer01 BS 10000
+NewUser FS 10000
+Buyer03 BS 10000
+Buyer02 BS 10000
+Valid_Std_Name_Cred999998.99 SS 10000
+Valid_Standard_Name SS 100000
+Valid_Admin_Name SS 100000
+Admin01 SS 100000
+Admin001 SS 100000
+User001 SS 100000
+Username SS 10000
