@@ -1,0 +1,8 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Enter Username to Add Credit to:
+That user does not exist
+Enter Command:

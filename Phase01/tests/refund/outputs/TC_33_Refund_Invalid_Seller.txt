@@ -1,0 +1,8 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+That user does not exist.
+Enter Command:
