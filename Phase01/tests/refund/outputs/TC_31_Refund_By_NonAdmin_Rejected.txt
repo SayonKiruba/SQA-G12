@@ -1,0 +1,6 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+You cannot access this command
+Enter Command:

@@ -1,0 +1,8 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Enter Username to add credit to:
+Credit Added to 'Username' Successfully
+Enter Command:

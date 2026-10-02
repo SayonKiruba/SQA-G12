@@ -1,0 +1,7 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Your account has TOO MUCH MONEY!!!!!
+Enter Command:

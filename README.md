@@ -1,5 +1,5 @@
-Our Repo For the SQA Lab
-Group members:
+# Group Members:
+
 - Manu
 - Sayon
 - Yusuf
