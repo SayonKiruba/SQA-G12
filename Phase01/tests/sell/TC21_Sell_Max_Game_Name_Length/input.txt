@@ -1,6 +1,6 @@
 login
 Seller01
 sell
-ABCDEFGHIJKLMNOPQRSTUVWXY
+Pokémon HeartGold Version
 15.00
 logout
