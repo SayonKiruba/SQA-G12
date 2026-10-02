@@ -1,0 +1,6 @@
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out

@@ -1,0 +1,7 @@
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Invalid: No further transactions allowed in this session
+Logged out

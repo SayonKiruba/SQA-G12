@@ -1,0 +1,5 @@
+login
+Seller01
+buy
+Persona 4 Golden
+logout

@@ -1,0 +1,6 @@
+login
+Seller01
+sell
+Expensive Game
+999.99
+logout
