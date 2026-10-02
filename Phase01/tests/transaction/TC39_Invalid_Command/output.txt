@@ -1,0 +1,6 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Invalid Command
+Enter Command:

@@ -1,0 +1,2 @@
+03 Valid_Game_Title    Valid_Seller_Nm 999.99
+00 Valid_Seller_Nm FS 000000.00

@@ -1,0 +1,6 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Permission denied. Privileged transaction restricted to admin.
+Enter Command:

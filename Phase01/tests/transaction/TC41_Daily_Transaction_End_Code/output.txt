@@ -1,0 +1,5 @@
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Logged out successfully

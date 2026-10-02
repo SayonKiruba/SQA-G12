@@ -1,0 +1,4 @@
+01 New_User_Name   FS 000000.00
+06 Valid_Buyer_Nam BS 000100.00
+05 Valid_Buyer_Nam Valid_Seller_Nm 000025.00
+00 Admin_User      AA 000000.00
