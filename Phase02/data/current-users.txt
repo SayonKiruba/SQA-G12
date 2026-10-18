@@ -1,0 +1,14 @@
+User01          FS 000150.00
+Seller01        SS 002500.00
+Buyer01         BS 000750.50
+NewUser         FS 000000.00
+Buyer03         BS 012345.67
+Buyer02         BS 000099.99
+Valid_Std_Name  FS 000400.00
+Valid_Standard  FS 001000.00
+Valid_Admin_Nam AA 000400.00
+Admin01         AA 100000.00
+Admin001        AA 025500.75
+User001         FS 000010.00
+Username        FS 005000.00
+END
