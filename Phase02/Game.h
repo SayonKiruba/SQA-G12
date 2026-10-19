@@ -9,4 +9,9 @@ struct Game {
     double      price = 0; // 0.00 - 999.99
     int         listedSession = 0;
 };
+
+struct GameOwnership {
+    std::string gameName;
+    std::string username;
+};
 #endif

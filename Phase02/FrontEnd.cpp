@@ -36,7 +36,10 @@ void FrontEnd::processCommand(const std::string& command) {
     if (command == "logout") { logout(); return; }
     if (!loggedIn)           { cout << "Invalid: Not logged in\n"; return; }
 
-    static const char* known[] = {"create","delete","sell","buy","refund","add credit"};
+    static const char* known[] = {
+        "create", "delete", "sell", "buy", "refund", "add credit",
+        "list games", "list accounts"
+    };
     if (std::find(std::begin(known), std::end(known), command) == std::end(known)) {
         cout << "Error: Invalid Command\n";
         return;
