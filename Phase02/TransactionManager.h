@@ -4,16 +4,32 @@
 #include <vector>
 #include "FileManager.h"
 #include "User.h"
+
 class TransactionManager {
-    std::vector<User> users; User* current = nullptr; int session = 0;
+    std::vector<User> users;
+    std::vector<Game> games;
+    std::vector<GameOwnership> collections;
+    std::string currentUsername;
+    int session = 0;
+
+    User* currentUser();
+    const User* currentUser() const;
+
 public:
-    void loadData(FileManager& fm) { users = fm.readUsers(); }
-    User* findUser(const std::string& n) { for (auto& u : users) if (u.username == n) return &u; return nullptr; }
-    void beginSession(User& u, int s) { current = &u; session = s; }
-    void endSession(FileManager& fm) {
-        char buf[64]; std::snprintf(buf, sizeof buf, "00 %-15s %s %09.2f", current->username.c_str(), current->userType.c_str(), 0.0);
-        fm.saveTransaction(buf); current->resetSessionCredit(); current = nullptr;
-    }
-    void processTransaction(const std::string&, FileManager&) {}
+    void loadData(FileManager& fm);
+    User* findUser(const std::string& username);
+    Game* findGame(const std::string& name);
+    bool ownsGame(const std::string& username, const std::string& gameName) const;
+    void beginSession(User& user, int sessionNumber);
+    void endSession(FileManager& fm);
+    void processTransaction(const std::string& command, FileManager& fm);
+    void createUser(FileManager& fm);
+    void deleteUser(FileManager& fm);
+    void sellGame(FileManager& fm);
+    void buyGame(FileManager& fm);
+    void refund(FileManager& fm);
+    void addCredit(FileManager& fm);
+    void listGames() const;
+    void listAccounts() const;
 };
 #endif
