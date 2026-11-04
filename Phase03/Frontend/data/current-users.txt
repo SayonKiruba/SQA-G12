@@ -11,4 +11,5 @@ Admin01         AA 100000.00
 Admin001        AA 025500.75
 User001         FS 000010.00
 Username        FS 005000.00
+User_Max_Cred   FS 999999.00
 END

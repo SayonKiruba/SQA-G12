@@ -1,6 +1,6 @@
 Login
-Valid_Admin_Name
+Valid_Admin_Nam
 Add Credit
 400.00
-Valid_Standard_Name
+Valid_Std_Name
 Logout
