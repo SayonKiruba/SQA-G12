@@ -1,5 +1,5 @@
 Login
-Valid_Std_Name_Cred999998.99
+User_Max_Cred
 Add Credit
 1.01
 Logout
