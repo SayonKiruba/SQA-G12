@@ -1,5 +1,5 @@
 Login
-Sell_Standard_U
+Seller01
 Buy
 Game_Title_Name
 Valid_Seller_Nm

@@ -1,5 +1,5 @@
 Login
-Username
+Valid_Std_Name
 Add Credit
 400.00
 Logout
