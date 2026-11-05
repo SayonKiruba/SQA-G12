@@ -1,9 +1,9 @@
 Enter Username:
-Logged in as Admin-01
+Logged in as Admin001
 Enter Username:
 Enter Type:
 created User01
 Enter Username:
 Invalid: User already exists
-Invalid: User already exists
+Error: Invalid Command
 Logged out
