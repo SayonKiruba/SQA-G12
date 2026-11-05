@@ -1,0 +1,1063 @@
+TC_34_Add_Credit_Standard
+
+actual:
+Enter Username:
+Logged in as Username
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Username
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+--------------------------------------------------
+
+TC_35_Add_Credit_Admin_to_Existing_User
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Enter Username to add credit to:
+Credit Added to 'Username' Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC_36_Add_Credit_Admin_Invalid_User
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Enter Username to Add Credit to:
+That user does not exist
+Enter Command:
+
+--------------------------------------------------
+
+TC_37_Add_Credit_Max_1000
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC_38_Add_Credit_Over_1000
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+THAT'S TOO MUCH MONEY!!!!!
+Enter Command:
+
+--------------------------------------------------
+
+TC_998_Add_Credit_Overflow_999999
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Your account has TOO MUCH MONEY!!!!!
+Enter Command:
+
+--------------------------------------------------
+
+TC25_Buy_Existing_Game
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Enter Game Name:
+Purchase successful
+Logged out
+
+--------------------------------------------------
+
+TC26_Buy_By_Sell_Standard_Rejected
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Invalid: Cannot buy from a sell account
+Invalid: Cannot buy from a sell account
+Logged out
+
+--------------------------------------------------
+
+TC27_Buy_Nonexistent_Game
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Enter Game Name:
+Invalid: Game does not exist
+Logged out
+
+--------------------------------------------------
+
+TC28_Buy_Insufficient_Credit
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer02
+Enter Game Name:
+Invalid: Insufficient credit
+Logged out
+
+--------------------------------------------------
+
+TC29_Buy_Already_Owned_Game
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer03
+Enter Game Name:
+Invalid: Game already owned
+Logged out
+
+--------------------------------------------------
+
+TC06_Create_Admin
+
+actual:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created NewUser
+logged out
+
+
+
+--------------------------------------------------
+
+TC07_Create_Buy_Standard
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created Buyer01
+Logged out
+
+
+--------------------------------------------------
+
+TC08_Create_Sell_Standard
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Enter Type:
+created Seller01
+Logged out
+
+
+
+--------------------------------------------------
+
+TC09_Create_By_Non_Admin_Rejected
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Invalid: Not an Admin
+Invalid: Not an Admin
+Logged out
+
+--------------------------------------------------
+
+TC10_Create_Username_Too_Long
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Username too long
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Invalid: Username too long
+Invalid: Username too long
+Logged out
+
+--------------------------------------------------
+
+TC11_Create_Duplicate_Username
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin-01
+Enter Username:
+Enter Type:
+created User01
+Enter Username:
+Invalid: User already exists
+Invalid: User already exists
+Logged out
+
+--------------------------------------------------
+
+TC12_Delete_Existing_Other_User
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted User001
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Deleted User01
+Logged out
+
+--------------------------------------------------
+
+TC13_Delete_By_Non_Admin_Rejected
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User01
+Invalid! Not an Admin
+Invalid! Not an Admin
+Logged out
+
+--------------------------------------------------
+
+TC14_Delete_Nonexistent_User
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User does not exist
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Invalid! User does not exist!
+Logged out
+
+--------------------------------------------------
+
+TC15_Delete_Current_User
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Cannot delete the user because they are currently logged on
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Invalid: Cannot delete the user because they are currently logged on
+Logged out
+
+--------------------------------------------------
+
+TC16_Delete_User_Cancels_Inventory
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted Seller01
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Deleted Seller01, Seller01 inventory cancelled, no further transactions allowed with Seller01
+Logged out
+
+--------------------------------------------------
+
+TC01_Valid_Login
+
+actual:
+Enter Username:
+Logged in as User001
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Logged out
+
+--------------------------------------------------
+
+TC02_Login_Before_Other_Transaction
+
+actual:
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Enter Username:
+Logged in as User001
+Logged out
+
+
+expected:
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Enter Username:
+Logged in as User001
+Logged out
+
+--------------------------------------------------
+
+TC03_Double_Login_Rejected
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Currently logged into an account
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Invalid: Currently logged into an account
+Invalid: Currently logged into an account
+Logged out
+
+
+
+--------------------------------------------------
+
+TC04_Valid_Logout
+
+actual:
+Enter Username:
+Logged in as User01
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User01
+Logged out
+
+
+--------------------------------------------------
+
+TC05_Logout_Before_Login
+
+actual:
+Invalid: Not logged in
+Enter Username:
+Logged in as User01
+Logged out
+
+
+expected:
+Invalid: Not logged in
+Enter Username:
+Logged in as User01
+Logged out
+
+--------------------------------------------------
+
+TC_30_Refund_Valid
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Successful
+Enter Command:
+
+--------------------------------------------------
+
+TC_31_Refund_By_NonAdmin_Rejected
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+You cannot access this command
+Enter Command:
+
+--------------------------------------------------
+
+TC_32_Refund_Invalid_Buyer
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+That user does not exist
+Enter Command:
+
+--------------------------------------------------
+
+TC_33_Refund_Invalid_Seller
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+That user does not exist.
+Enter Command:
+
+--------------------------------------------------
+
+TC_999_Refund_Invalid_Credit_Amt
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Unsuccssesful - Requires Positive Credit Amount
+Enter Command:
+
+--------------------------------------------------
+
+TC17_Sell_Valid_Game
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+--------------------------------------------------
+
+TC18_Sell_By_Buy_Standard_Rejected
+
+actual:
+Enter Username:
+Logged in as Buyer01
+Invalid: Cannot sell from a buyer account
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Invalid: Cannot sell from a buyer account
+Invalid: Cannot sell from a buyer account
+Invalid: Cannot sell from a buyer account
+Logged out
+
+--------------------------------------------------
+
+TC19_Sell_Max_Price
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+--------------------------------------------------
+
+TC20_Sell_Over_Max_Price
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Invalid! over price limit
+Logged out
+
+--------------------------------------------------
+
+TC21_Sell_Max_Game_Name_Length
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+--------------------------------------------------
+
+TC22_Sell_Game_Name_Too_Long
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game name exceeds maximum of 25 characters
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game name exceeds maximum of 25 characters
+Logged out
+
+--------------------------------------------------
+
+TC23_Sell_Duplicate_Game_Name
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Logged out
+
+--------------------------------------------------
+
+TC24_Sell_No_Further_Transaction_Same_Session
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Enter Game Name:
+Enter Price:
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Invalid: No further transactions allowed in this session
+Logged out
+
+--------------------------------------------------
+
+TC39_Invalid_Command
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Invalid Command
+Enter Command:
+
+--------------------------------------------------
+
+TC40_Bad_Input_Does_Not_Crash
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Invalid input. Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC41_Daily_Transaction_End_Code
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Logged out successfully
+
+--------------------------------------------------
+
+TC42_Transaction_Record_Create_Format
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter New Username:
+Enter User Type:
+User Created Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC43_Transaction_Record_Sell_Format
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Game Name:
+Enter Price:
+Game Listed for Sale Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC44_Transaction_Record_Buy_Format
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Game Name:
+Enter Seller Username:
+Game Purchased Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC45_Transaction_Record_Refund_Format
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Username:
+Enter Seller Username:
+Enter Credit Amount:
+Refund Issued Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC46_Transaction_Record_Add_Credit_Format
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+
+--------------------------------------------------
+
+TC47_Non_Admin_Only_Unprivileged
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Permission denied. Privileged transaction restricted to admin.
+Enter Command:
+
+--------------------------------------------------
+
+TC48_Admin_Allows_All_Transaction_Types
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter New Username:
+Enter User Type:
+User Created Successfully
+Enter Command:
+Enter Username to Add Credit:
+Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+Enter Buyer Username:
+Enter Seller Username:
+Enter Credit Amount:
+Refund Issued Successfully
+Enter Command:
+
+--------------------------------------------------
+

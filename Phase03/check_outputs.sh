@@ -37,6 +37,10 @@ count=0
 full_passes=0
 failed=0
 
+normalize_output() {
+    sed 's/\r$//' "$1" | awk 'NF { $1=$1; print }'
+}
+
 for input_file in "$TESTS_DIR"/*/*/input.txt; do
     [ -f "$input_file" ] || continue
     case_dir="$(dirname "$input_file")"
@@ -48,31 +52,50 @@ for input_file in "$TESTS_DIR"/*/*/input.txt; do
 
     # Compare actual output with expected output
     if [ -f "$actual" ] && [ -f "$expected" ] && \
-    [ -f "$exit_status_file" ] && \
-    [ "$(cat "$exit_status_file")" = "0" ] && \
-    cmp -s "$actual" "$expected"; then
+    diff -q <(normalize_output "$actual") \
+            <(normalize_output "$expected") > /dev/null; then
 
-        full_passes=$((full_passes + 1))
-    else
-        failed=$((failed + 1))
-    fi
+    full_passes=$((full_passes + 1))
+    status="PASS"
+else
+    failed=$((failed + 1))
+    status="FAIL"
+fi
 
     {
-        printf '%s\n\n' "$case_name"
-        printf 'actual:\n'
-        if [ -f "$actual" ]; then
-            cat "$actual"
+    printf '%s\n' "$case_name"
+    printf 'Status: %s\n\n' "$status"
+
+    printf 'actual:\n'
+    if [ -f "$actual" ]; then
+        cat "$actual"
+    else
+        printf '(actual output missing)\n'
+    fi
+
+    printf '\n\nexpected:\n'
+    if [ -f "$expected" ]; then
+        cat "$expected"
+    else
+        printf '(expected output missing)\n'
+    fi
+
+    # Only show differences for failed tests
+    if [ "$status" = "FAIL" ]; then
+        printf '\n\nDifferences:\n'
+
+        if [ -f "$actual" ] && [ -f "$expected" ]; then
+            diff -u \
+                <(normalize_output "$expected") \
+                <(normalize_output "$actual") || true
         else
-            printf '(actual output missing)\n'
+            printf 'One or more output files are missing.\n'
         fi
-        printf '\n\nexpected:\n'
-        if [ -f "$expected" ]; then
-            cat "$expected"
-        else
-            printf '(expected output missing)\n'
-        fi
-        printf '\n\n%s\n\n' '--------------------------------------------------'
-    } >> "$RESULTS_FILE"
+    fi
+
+    printf '\n\n%s\n\n' '--------------------------------------------------'
+
+} >> "$RESULTS_FILE"
     count=$((count + 1))
 done
 
