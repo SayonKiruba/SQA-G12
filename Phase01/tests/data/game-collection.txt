@@ -2,5 +2,6 @@ Persona 4 Golden                   User001
 Elden Ring                         User001        
 Chrono Trigger                     User001        
 Stardew Valley                     User001        
-Pokémon HeartGold                  User001        
+Pokémon HeartGold                  User001  
+Expensive Game                     User001
 END

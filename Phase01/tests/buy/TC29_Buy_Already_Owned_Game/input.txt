@@ -1,6 +1,5 @@
 Login
-Valid_Buyer_Nam
+User001
 Buy
-Owned_Game_Title
-Valid_Seller_Nm
+Elden Ring
 Logout

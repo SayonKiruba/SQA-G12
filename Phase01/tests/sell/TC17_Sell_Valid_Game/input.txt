@@ -1,6 +1,6 @@
 login
 Seller01
 sell
-Chrono Trigger
+New Game
 15.00
 logout

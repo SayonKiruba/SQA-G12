@@ -1,5 +1,5 @@
 Login
-Valid_Admin_Name
+Valid_Admin_Nam
 Refund
-Invalid_Buyer_Name
+Invalid_BuyerNm
 Logout

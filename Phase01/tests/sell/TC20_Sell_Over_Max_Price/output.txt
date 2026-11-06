@@ -2,5 +2,5 @@ Enter Username:
 Logged in as Seller01
 Enter Game Name:
 Enter Price:
-Invalid! over price limit
+Invalid: Price must be between 0.01 and 999.99
 Logged out

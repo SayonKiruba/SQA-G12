@@ -1,4 +1,4 @@
 Login
-Valid_Standard_Name
+Valid_Std_Name
 Invalid_Command
 Logout

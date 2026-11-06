@@ -1,7 +1,7 @@
 Login
-Valid_Admin_Name
+Valid_Admin_Nam
 Refund
-Valid_Buyer_Name
-Valid_Seller_Name
+Valid_Buyer_Nam
+Valid_Seller_Nm
 500.00
 Logout

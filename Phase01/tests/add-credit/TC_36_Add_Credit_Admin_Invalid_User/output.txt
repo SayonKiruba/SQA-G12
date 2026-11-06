@@ -1,8 +1,6 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Admin_Nam
 Enter Amount to Add:
-Enter Username to Add Credit to:
-That user does not exist
-Enter Command:
+Enter Username to add credit to:
+Invalid: User does not exist
+Logged out

@@ -1,5 +1,5 @@
 login
-Admin001
+Admin01
 create
 Buyer01
 buy-standard

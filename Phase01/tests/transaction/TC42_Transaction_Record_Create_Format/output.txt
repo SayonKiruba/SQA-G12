@@ -1,8 +1,6 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
-Enter New Username:
-Enter User Type:
-User Created Successfully
-Enter Command:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created New_User_Name2
+Logged out

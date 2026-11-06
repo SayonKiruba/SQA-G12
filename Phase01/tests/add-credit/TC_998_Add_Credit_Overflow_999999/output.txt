@@ -1,7 +1,5 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as User_Max_Cred
 Enter Amount to Add:
-Your account has TOO MUCH MONEY!!!!!
-Enter Command:
+Invalid: Credit balance limit exceeded
+Logged out

@@ -1,5 +1,5 @@
 Enter Username:
-Logged in as Username
+Logged in as Valid_Std_Name
 Enter Amount to Add:
 Credit Added Successfully
 Logged out

@@ -1,6 +1,4 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Std_Name
 Error: Invalid Command
-Enter Command:
+Logged out

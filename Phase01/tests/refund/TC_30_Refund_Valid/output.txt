@@ -1,9 +1,7 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Admin_Nam
 Enter Buyer Name:
 Enter Seller Name:
 Enter Credit to Transfer:
 Transfer Successful
-Enter Command:
+Logged out

@@ -1,6 +1,7 @@
 Login
-Valid_Standard_Name
+Valid_Std_Name
 Add Credit
 invalid_amount
+Add Credit
 400.00
 Logout

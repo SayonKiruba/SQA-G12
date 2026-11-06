@@ -1,8 +1,6 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Admin_Nam
 Enter Buyer Name:
 Enter Seller Name:
-That user does not exist.
-Enter Command:
+Enter Credit to Transfer:
+Invalid: Invalid credit amount

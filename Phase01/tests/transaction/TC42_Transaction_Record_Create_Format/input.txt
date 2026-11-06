@@ -1,6 +1,6 @@
 Login
-Admin_User
+Admin01
 Create
-New_User_Name
+New_User_Name2
 FS
 Logout

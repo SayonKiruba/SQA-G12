@@ -1,8 +1,6 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Admin_Nam
 Enter Amount to Add:
 Enter Username to add credit to:
-Credit Added to 'Username' Successfully
-Enter Command:
+Credit Added to 'Valid_Std_Name' Successfully
+Logged out

@@ -1,6 +1,5 @@
 Login
-Valid_Buyer_Nam
+Buyer02
 Buy
-Expensive_Game
-Valid_Seller_Nm
+Expensive Game
 Logout

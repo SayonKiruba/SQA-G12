@@ -1,8 +1,7 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Std_Name
 Enter Amount to Add:
-Invalid input. Enter Amount to Add:
+Invalid: Invalid credit amount
+Enter Amount to Add:
 Credit Added Successfully
-Enter Command:
+Logged out

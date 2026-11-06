@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="509de976-d7bd-4393-a803-ab6f442eab2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_34_Add_Credit_Standard/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_34_Add_Credit_Standard/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_35_Add_Credit_Admin_to_Existing_User/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_35_Add_Credit_Admin_to_Existing_User/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_36_Add_Credit_Admin_Invalid_User/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_36_Add_Credit_Admin_Invalid_User/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_37_Add_Credit_Max_1000/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_37_Add_Credit_Max_1000/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_38_Add_Credit_Over_1000/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_38_Add_Credit_Over_1000/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/add-credit/TC_998_Add_Credit_Overflow_999999/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/add-credit/TC_998_Add_Credit_Overflow_999999/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phase03/Frontend/data/current-users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Phase03/Frontend/data/current-users.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3LcVIwTw7gsqIG3RfSYFVZ3leF6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Sayon",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Sayon/Documents/sqa/SQA-G12/Phase01",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [],
+  "modificationCount": 1
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="509de976-d7bd-4393-a803-ab6f442eab2b" name="Changes" comment="" />
+      <created>1793753267350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793753267350</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

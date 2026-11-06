@@ -1,6 +1,6 @@
 login
 Admin001
 create
-Seller01
+Seller02
 sell-standard
 logout

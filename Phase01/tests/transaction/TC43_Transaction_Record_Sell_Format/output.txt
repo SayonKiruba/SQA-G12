@@ -1,8 +1,6 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Std_Name
 Enter Game Name:
 Enter Price:
-Game Listed for Sale Successfully
-Enter Command:
+Game listed in seller list
+Logged out

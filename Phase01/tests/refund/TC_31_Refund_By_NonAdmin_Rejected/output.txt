@@ -1,6 +1,4 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
-You cannot access this command
-Enter Command:
+Logged in as Valid_Std_Name
+Error: Permission denied. Privileged transaction restricted to admin.
+Logged out

@@ -2,6 +2,6 @@ Enter Username:
 Logged in as Admin001
 Enter Username:
 Enter Type:
-created Seller01
+created Seller02
 Logged out
 

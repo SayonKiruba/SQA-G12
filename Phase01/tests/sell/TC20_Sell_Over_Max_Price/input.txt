@@ -1,6 +1,6 @@
 login
 Seller01
 sell
-Chrono Trigger
+MaxOverflowGame
 1000.00
 logout

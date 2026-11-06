@@ -1,7 +1,5 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Std_Name
 Enter Amount to Add:
-THAT'S TOO MUCH MONEY!!!!!
-Enter Command:
+Invalid: Cannot add more than 1000.00 per session
+Logged out

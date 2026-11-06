@@ -1,7 +1,7 @@
 login
 Seller01
 sell
-Chrono Trigger
+Sell Transact Block
 15.00
 sell
 logout

@@ -1,5 +1,5 @@
 Enter Username:
-Logged in as User01
-Invalid! Not an Admin
-Invalid! Not an Admin
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
 Logged out

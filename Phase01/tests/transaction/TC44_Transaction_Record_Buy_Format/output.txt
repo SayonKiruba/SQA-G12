@@ -1,8 +1,5 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
+Logged in as Valid_Buyer_Nam
 Enter Game Name:
-Enter Seller Username:
-Game Purchased Successfully
-Enter Command:
+Purchase successful
+Logged out

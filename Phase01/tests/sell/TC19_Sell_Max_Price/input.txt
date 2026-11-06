@@ -1,6 +1,6 @@
 login
 Seller01
 sell
-Elden Ring
+Max Cred Game
 999.99
 logout
