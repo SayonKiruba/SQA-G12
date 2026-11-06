@@ -17,6 +17,7 @@
 |                    | addCredit                              | Adds credit to an account within the permitted limits                                              |
 |                    | listGames                              | Displays all games currently available for sale using the stored game objects                      |
 |                    | listAccounts                           | Displays all active user accounts using the stored user objects                                    |
+|                    | searchUsers                            | Searches users by username while restricting non-admins to non-admin accounts                     |
 |                    | findUser                               | Searches for a user by username                                                                    |
 |                    | findGame                               | Searches for an available game by name                                                             |
 |                    | ownsGame                               | Checks whether a user already owns a game                                                          |

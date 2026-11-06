@@ -23,6 +23,9 @@ Phase: Phase 01 — Black Box Testing Automation
    │   ├── buy/                         # Feature: Purchase Game  
    │   ├── refund/                      # Feature: Issue Credit Refund  
    │   ├── add-credit/                  # Feature: Add Credit to Account  
+   │   ├── list-games/                  # Feature: List Available Games
+   │   ├── list-accounts/               # Feature: List User Accounts
+   │   ├── search-users/                # Feature: Search User Accounts
    │   └── transaction/                 # Feature: Transaction Record Formatting  
    └── MasterTable.md  
    │  

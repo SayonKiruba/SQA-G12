@@ -48,3 +48,7 @@
 | TC46_Transaction_Record_Add_Credit_Format | Daily Transaction File | Tests to ensure valid transaction format for add_credit is accepted |
 | TC47_Non_Admin_Only_Unprivleged | User Roles | Tests to ensure non admins have access to non privileged transactions |
 | TC48_Admin_Allows_All_Transaction_Types | User Roles | Test to ensure admins have access to all privileged transactions |
+| TC49_List_Games | List Games | Tests to ensure logged-in users can list all available games |
+| TC50_List_Accounts | List Accounts | Tests to ensure logged-in users can list all user accounts |
+| TC51_Search_Users_Non_Admin | Search Users | Tests to ensure non-admin searches return matching non-admin accounts only |
+| TC52_Search_Users_Admin | Search Users | Tests to ensure admin searches return matching accounts of every user type |

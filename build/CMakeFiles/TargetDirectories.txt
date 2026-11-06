@@ -1,0 +1,3 @@
+C:/Users/Sayon/Documents/sqa/SQA-G12/build/CMakeFiles/SQA_G12.dir
+C:/Users/Sayon/Documents/sqa/SQA-G12/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Sayon/Documents/sqa/SQA-G12/build/CMakeFiles/ZERO_CHECK.dir

@@ -35,12 +35,12 @@ else
     fi
     PROGRAM="$WORK_DIR/SQA_G12.exe"
     echo "Compiling the C++ application..."
-    g++ -std=c++14 -I"$PROJECT_ROOT/Phase02" \
-        "$PROJECT_ROOT/Phase02/main.cpp" \
-        "$PROJECT_ROOT/Phase02/FrontEnd.cpp" \
-        "$PROJECT_ROOT/Phase02/TransactionManager.cpp" \
-        "$PROJECT_ROOT/Phase02/FileManager.cpp" \
-        "$PROJECT_ROOT/Phase02/User.cpp" \
+    g++ -std=c++14 -I"$PROJECT_ROOT/Phase03/Frontend" \
+        "$PROJECT_ROOT/Phase03/Frontend/main.cpp" \
+        "$PROJECT_ROOT/Phase03/Frontend/FrontEnd.cpp" \
+        "$PROJECT_ROOT/Phase03/Frontend/TransactionManager.cpp" \
+        "$PROJECT_ROOT/Phase03/Frontend/FileManager.cpp" \
+        "$PROJECT_ROOT/Phase03/Frontend/User.cpp" \
         -o "$PROGRAM"
 fi
 

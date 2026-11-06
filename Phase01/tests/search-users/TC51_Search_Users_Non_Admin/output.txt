@@ -1,0 +1,8 @@
+Enter Username:
+Logged in as User001
+Enter Username Search Term:
+Valid_Std_Name | FS | 400.00
+Valid_Standard | FS | 1000.00
+Valid_Buyer_Nam | BS | 5000.00
+Valid_Seller_Nm | SS | 5000.00
+Logged out

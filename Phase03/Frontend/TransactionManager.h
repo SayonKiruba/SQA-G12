@@ -31,5 +31,6 @@ public:
     void addCredit(FileManager& fm);
     void listGames() const;
     void listAccounts() const;
+    void searchUsers();
 };
 #endif

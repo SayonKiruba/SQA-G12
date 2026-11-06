@@ -190,6 +190,8 @@ void TransactionManager::processTransaction(const std::string& command, FileMana
         listGames();
     } else if (normalized == "list accounts") {
         listAccounts();
+    } else if (normalized == "search users") {
+        searchUsers();
     } else {
         std::cout << "Error: Invalid Command\n";
     }
@@ -483,4 +485,32 @@ void TransactionManager::listAccounts() const {
         std::cout << user.username << " | " << user.userType << " | "
                   << std::fixed << std::setprecision(2) << user.credit << '\n';
     }
+}
+
+void TransactionManager::searchUsers() {
+    const User* actor = currentUser();
+    if (!actor) {
+        std::cout << "Invalid: Not logged in\n";
+        return;
+    }
+
+    std::cout << "Enter Username Search Term:\n";
+    std::string searchTerm;
+    if (!readLine(searchTerm)) return;
+    if (searchTerm.empty()) {
+        std::cout << "Invalid: Search term cannot be empty\n";
+        return;
+    }
+
+    const std::string normalizedTerm = lowercase(searchTerm);
+    bool found = false;
+    for (const User& user : users) {
+        if (!actor->isAdmin() && user.isAdmin()) continue;
+        if (lowercase(user.username).find(normalizedTerm) == std::string::npos) continue;
+
+        std::cout << user.username << " | " << user.userType << " | "
+                  << std::fixed << std::setprecision(2) << user.credit << '\n';
+        found = true;
+    }
+    if (!found) std::cout << "No users found\n";
 }

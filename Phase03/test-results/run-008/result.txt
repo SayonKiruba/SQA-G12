@@ -1,0 +1,1635 @@
+TC_34_Add_Credit_Standard
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+--------------------------------------------------
+
+TC_35_Add_Credit_Admin_to_Existing_User
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Amount to Add:
+Enter Username to add credit to:
+Credit Added to 'Valid_Std_Name' Successfully
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Command:
+Enter Amount to Add:
+Enter Username to add credit to:
+Credit Added to 'Valid_Std_Name' Successfully
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:30.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:30.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Valid_Admin_Nam
+-Enter Command:
+ Enter Amount to Add:
+ Enter Username to add credit to:
+ Credit Added to 'Valid_Std_Name' Successfully
++Logged out
+
+
+--------------------------------------------------
+
+TC_36_Add_Credit_Admin_Invalid_User
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Amount to Add:
+Enter Username to add credit to:
+Invalid: User does not exist
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Amount to Add:
+Enter Username to add credit to:
+Credit Added to 'Valid_Std_Name' Successfully
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:30.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:30.000000000 -0500
+@@ -2,5 +2,5 @@
+ Logged in as Valid_Admin_Nam
+ Enter Amount to Add:
+ Enter Username to add credit to:
+-Credit Added to 'Valid_Std_Name' Successfully
++Invalid: User does not exist
+ Logged out
+
+
+--------------------------------------------------
+
+TC_37_Add_Credit_Max_1000
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:30.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:30.000000000 -0500
+@@ -1,7 +1,5 @@
+-Enter Command:
+ Enter Username:
+ Logged in as Valid_Std_Name
+ Enter Amount to Add:
+ Credit Added Successfully
+ Logged out
+-Enter Command:
+
+
+--------------------------------------------------
+
+TC_38_Add_Credit_Over_1000
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Invalid: Cannot add more than 1000.00 per session
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Invalid: Cannot add more than 1000.00 per session
+Logged out
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:31.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:31.000000000 -0500
+@@ -1,7 +1,5 @@
+-Enter Command:
+ Enter Username:
+ Logged in as Valid_Std_Name
+ Enter Amount to Add:
+ Invalid: Cannot add more than 1000.00 per session
+ Logged out
+-Enter Command:
+
+
+--------------------------------------------------
+
+TC_998_Add_Credit_Overflow_999999
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Your account has TOO MUCH MONEY!!!!!
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:31.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:31.000000000 -0500
+@@ -1,7 +1,5 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter Amount to Add:
+-Your account has TOO MUCH MONEY!!!!!
+-Enter Command:
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC25_Buy_Existing_Game
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Enter Game Name:
+Purchase successful
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:31.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:31.000000000 -0500
+@@ -1,5 +1,6 @@
+ Enter Username:
+-Logged in as Buyer01
+-Enter Game Name:
+-Purchase successful
+-Logged out
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC26_Buy_By_Sell_Standard_Rejected
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Seller01
+Invalid: Cannot buy from a sell account
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Invalid: Cannot buy from a sell account
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+--------------------------------------------------
+
+TC27_Buy_Nonexistent_Game
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Enter Game Name:
+Invalid: Game does not exist
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:31.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:31.000000000 -0500
+@@ -1,5 +1,6 @@
+ Enter Username:
+-Logged in as Buyer01
+-Enter Game Name:
+-Invalid: Game does not exist
+-Logged out
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC28_Buy_Insufficient_Credit
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer02
+Enter Game Name:
+Invalid: Insufficient credit
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:32.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:32.000000000 -0500
+@@ -1,5 +1,6 @@
+ Enter Username:
+-Logged in as Buyer02
+-Enter Game Name:
+-Invalid: Insufficient credit
+-Logged out
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC29_Buy_Already_Owned_Game
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Username:
+Logged in as Buyer03
+Enter Game Name:
+Invalid: Game already owned
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:32.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:32.000000000 -0500
+@@ -1,5 +1,6 @@
+ Enter Username:
+-Logged in as Buyer03
+-Enter Game Name:
+-Invalid: Game already owned
+-Logged out
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC06_Create_Admin
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created NewUser
+logged out
+
+
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:32.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:32.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Admin01
+ Enter Username:
+-Enter Type:
+-created NewUser
+-logged out
++Invalid: User already exists
++Error: Invalid Command
++Logged out
+
+
+--------------------------------------------------
+
+TC07_Create_Buy_Standard
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created Buyer01
+Logged out
+
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:32.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:32.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+-Logged in as Admin01
++Logged in as Admin001
+ Enter Username:
+-Enter Type:
+-created Buyer01
++Invalid: User already exists
++Error: Invalid Command
+ Logged out
+
+
+--------------------------------------------------
+
+TC08_Create_Sell_Standard
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Enter Type:
+created Seller01
+Logged out
+
+
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:32.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:32.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Admin001
+ Enter Username:
+-Enter Type:
+-created Seller01
++Invalid: User already exists
++Error: Invalid Command
+ Logged out
+
+
+--------------------------------------------------
+
+TC09_Create_By_Non_Admin_Rejected
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+--------------------------------------------------
+
+TC10_Create_Username_Too_Long
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Username too long
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Username too long
+Error: Invalid Command
+Logged out
+
+--------------------------------------------------
+
+TC11_Create_Duplicate_Username
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Enter Type:
+created User01
+Enter Username:
+Invalid: User already exists
+Error: Invalid Command
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:33.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:33.000000000 -0500
+@@ -1,8 +1,8 @@
+ Enter Username:
+ Logged in as Admin001
+ Enter Username:
+-Enter Type:
+-created User01
++Invalid: User already exists
++Error: Invalid Command
+ Enter Username:
+ Invalid: User already exists
+ Error: Invalid Command
+
+
+--------------------------------------------------
+
+TC12_Delete_Existing_Other_User
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted User001
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted User001
+Logged out
+
+--------------------------------------------------
+
+TC13_Delete_By_Non_Admin_Rejected
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Invalid: Not an Admin
+Error: Invalid Command
+Logged out
+
+
+--------------------------------------------------
+
+TC14_Delete_Nonexistent_User
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User does not exist
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: User does not exist
+Logged out
+
+--------------------------------------------------
+
+TC15_Delete_Current_User
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Cannot delete the user because they are currently logged on
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Invalid: Cannot delete the user because they are currently logged on
+Logged out
+
+--------------------------------------------------
+
+TC16_Delete_User_Cancels_Inventory
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted Seller01
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Admin001
+Enter Username:
+Deleted Seller01
+Logged out
+
+--------------------------------------------------
+
+TC01_Valid_Login
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as User001
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Logged out
+
+--------------------------------------------------
+
+TC02_Login_Before_Other_Transaction
+Status: PASS
+
+actual:
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Enter Username:
+Logged in as User001
+Logged out
+
+
+expected:
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Enter Username:
+Logged in as User001
+Logged out
+
+--------------------------------------------------
+
+TC03_Double_Login_Rejected
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as User001
+Invalid: Currently logged into an account
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User001
+Invalid: Currently logged into an account
+Error: Invalid Command
+Logged out
+
+
+--------------------------------------------------
+
+TC04_Valid_Logout
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as User01
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as User01
+Logged out
+
+
+--------------------------------------------------
+
+TC05_Logout_Before_Login
+Status: PASS
+
+actual:
+Invalid: Not logged in
+Enter Username:
+Logged in as User01
+Logged out
+
+
+expected:
+Invalid: Not logged in
+Enter Username:
+Logged in as User01
+Logged out
+
+--------------------------------------------------
+
+TC_30_Refund_Valid
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Invalid: Buyer does not exist
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Successful
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:34.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:34.000000000 -0500
+@@ -1,9 +1,7 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
++Logged in as Valid_Admin_Nam
+ Enter Buyer Name:
+ Enter Seller Name:
+ Enter Credit to Transfer:
+-Transfer Successful
+-Enter Command:
++Invalid: Buyer does not exist
++Logged out
+
+
+--------------------------------------------------
+
+TC_31_Refund_By_NonAdmin_Rejected
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Error: Permission denied. Privileged transaction restricted to admin.
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+You cannot access this command
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:34.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:34.000000000 -0500
+@@ -1,6 +1,4 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-You cannot access this command
+-Enter Command:
++Logged in as Valid_Std_Name
++Error: Permission denied. Privileged transaction restricted to admin.
++Logged out
+
+
+--------------------------------------------------
+
+TC_32_Refund_Invalid_Buyer
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+That user does not exist
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:35.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:35.000000000 -0500
+@@ -1,7 +1,5 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
++Logged in as Valid_Admin_Nam
+ Enter Buyer Name:
+-That user does not exist
+-Enter Command:
++Enter Seller Name:
++Enter Credit to Transfer:
+
+
+--------------------------------------------------
+
+TC_33_Refund_Invalid_Seller
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Invalid: Invalid credit amount
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+That user does not exist.
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:35.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:35.000000000 -0500
+@@ -1,8 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
++Logged in as Valid_Admin_Nam
+ Enter Buyer Name:
+ Enter Seller Name:
+-That user does not exist.
+-Enter Command:
++Enter Credit to Transfer:
++Invalid: Invalid credit amount
+
+
+--------------------------------------------------
+
+TC_999_Refund_Invalid_Credit_Amt
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Admin_Nam
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Invalid: Invalid credit amount
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Unsuccssesful - Requires Positive Credit Amount
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:35.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:35.000000000 -0500
+@@ -1,9 +1,7 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
++Logged in as Valid_Admin_Nam
+ Enter Buyer Name:
+ Enter Seller Name:
+ Enter Credit to Transfer:
+-Transfer Unsuccssesful - Requires Positive Credit Amount
+-Enter Command:
++Invalid: Invalid credit amount
++Logged out
+
+
+--------------------------------------------------
+
+TC17_Sell_Valid_Game
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:35.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:35.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Seller01
+ Enter Game Name:
+-Enter Price:
+-Game listed in seller list
++Invalid: Game already exists in seller list
++Error: Invalid Command
+ Logged out
+
+
+--------------------------------------------------
+
+TC18_Sell_By_Buy_Standard_Rejected
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Buyer01
+Invalid: Cannot sell from a buyer account
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Buyer01
+Invalid: Cannot sell from a buyer account
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+--------------------------------------------------
+
+TC19_Sell_Max_Price
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:35.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:35.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Seller01
+ Enter Game Name:
+-Enter Price:
+-Game listed in seller list
++Invalid: Game already exists in seller list
++Error: Invalid Command
+ Logged out
+
+
+--------------------------------------------------
+
+TC20_Sell_Over_Max_Price
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Invalid! over price limit
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:36.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:36.000000000 -0500
+@@ -1,6 +1,6 @@
+ Enter Username:
+ Logged in as Seller01
+ Enter Game Name:
+-Enter Price:
+-Invalid! over price limit
++Invalid: Game already exists in seller list
++Error: Invalid Command
+ Logged out
+
+
+--------------------------------------------------
+
+TC21_Sell_Max_Game_Name_Length
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Logged out
+
+--------------------------------------------------
+
+TC22_Sell_Game_Name_Too_Long
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game name exceeds maximum of 25 characters
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game name exceeds maximum of 25 characters
+Logged out
+
+--------------------------------------------------
+
+TC23_Sell_Duplicate_Game_Name
+Status: PASS
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Logged out
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Logged out
+
+--------------------------------------------------
+
+TC24_Sell_No_Further_Transaction_Same_Session
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Invalid: Game already exists in seller list
+Error: Invalid Command
+Enter Game Name:
+Enter Price:
+
+
+expected:
+Enter Username:
+Logged in as Seller01
+Enter Game Name:
+Enter Price:
+Game listed in seller list
+Invalid: No further transactions allowed in this session
+Logged out
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:36.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:36.000000000 -0500
+@@ -1,7 +1,7 @@
+ Enter Username:
+ Logged in as Seller01
+ Enter Game Name:
++Invalid: Game already exists in seller list
++Error: Invalid Command
++Enter Game Name:
+ Enter Price:
+-Game listed in seller list
+-Invalid: No further transactions allowed in this session
+-Logged out
+
+
+--------------------------------------------------
+
+TC39_Invalid_Command
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Invalid Command
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:36.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:36.000000000 -0500
+@@ -1,6 +1,4 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Error: Invalid Command
+-Enter Command:
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC40_Bad_Input_Does_Not_Crash
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Invalid input. Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:37.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:37.000000000 -0500
+@@ -1,8 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter Amount to Add:
+-Invalid input. Enter Amount to Add:
+-Credit Added Successfully
+-Enter Command:
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC41_Daily_Transaction_End_Code
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Logged out successfully
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:37.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:37.000000000 -0500
+@@ -1,5 +1,3 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Logged out successfully
++Invalid: User not found
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC42_Transaction_Record_Create_Format
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created New_User_Name2
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter New Username:
+Enter User Type:
+User Created Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:37.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:37.000000000 -0500
+@@ -1,8 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter New Username:
+-Enter User Type:
+-User Created Successfully
+-Enter Command:
++Logged in as Admin01
++Enter Username:
++Enter Type:
++created New_User_Name2
++Logged out
+
+
+--------------------------------------------------
+
+TC43_Transaction_Record_Sell_Format
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Game Name:
+Enter Price:
+Game Listed for Sale Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:37.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:37.000000000 -0500
+@@ -1,8 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter Game Name:
+-Enter Price:
+-Game Listed for Sale Successfully
+-Enter Command:
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC44_Transaction_Record_Buy_Format
+Status: FAIL
+
+actual:
+Enter Username:
+Invalid: User not found
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+Invalid: Not logged in
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Game Name:
+Enter Seller Username:
+Game Purchased Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:37.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:37.000000000 -0500
+@@ -1,8 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter Game Name:
+-Enter Seller Username:
+-Game Purchased Successfully
+-Enter Command:
++Invalid: User not found
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
++Invalid: Not logged in
+
+
+--------------------------------------------------
+
+TC45_Transaction_Record_Refund_Format
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin01
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Invalid: Buyer does not exist
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Buyer Username:
+Enter Seller Username:
+Enter Credit Amount:
+Refund Issued Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:38.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:38.000000000 -0500
+@@ -1,9 +1,7 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter Buyer Username:
+-Enter Seller Username:
+-Enter Credit Amount:
+-Refund Issued Successfully
+-Enter Command:
++Logged in as Admin01
++Enter Buyer Name:
++Enter Seller Name:
++Enter Credit to Transfer:
++Invalid: Buyer does not exist
++Logged out
+
+
+--------------------------------------------------
+
+TC46_Transaction_Record_Add_Credit_Format
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Enter Amount to Add:
+Credit Added Successfully
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:38.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:38.000000000 -0500
+@@ -1,7 +1,5 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
++Logged in as Valid_Std_Name
+ Enter Amount to Add:
+ Credit Added Successfully
+-Enter Command:
++Logged out
+
+
+--------------------------------------------------
+
+TC47_Non_Admin_Only_Unprivileged
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Valid_Std_Name
+Invalid: Not an Admin
+Error: Invalid Command
+Error: Invalid Command
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Error: Permission denied. Privileged transaction restricted to admin.
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:38.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:38.000000000 -0500
+@@ -1,6 +1,6 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Error: Permission denied. Privileged transaction restricted to admin.
+-Enter Command:
++Logged in as Valid_Std_Name
++Invalid: Not an Admin
++Error: Invalid Command
++Error: Invalid Command
++Logged out
+
+
+--------------------------------------------------
+
+TC48_Admin_Allows_All_Transaction_Types
+Status: FAIL
+
+actual:
+Enter Username:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created New_User_Name3
+Enter Amount to Add:
+Invalid: Invalid credit amount
+Error: Invalid Command
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Invalid: Buyer does not exist
+Logged out
+
+
+expected:
+Enter Command:
+Enter Username:
+Logged in as 'Username'
+Enter Command:
+Enter New Username:
+Enter User Type:
+User Created Successfully
+Enter Command:
+Enter Username to Add Credit:
+Enter Amount to Add:
+Credit Added Successfully
+Enter Command:
+Enter Buyer Username:
+Enter Seller Username:
+Enter Credit Amount:
+Refund Issued Successfully
+Enter Command:
+
+Differences:
+--- /dev/fd/63	2026-11-05 13:15:38.000000000 -0500
++++ /dev/fd/62	2026-11-05 13:15:38.000000000 -0500
+@@ -1,17 +1,13 @@
+-Enter Command:
+ Enter Username:
+-Logged in as 'Username'
+-Enter Command:
+-Enter New Username:
+-Enter User Type:
+-User Created Successfully
+-Enter Command:
+-Enter Username to Add Credit:
++Logged in as Admin01
++Enter Username:
++Enter Type:
++created New_User_Name3
+ Enter Amount to Add:
+-Credit Added Successfully
+-Enter Command:
+-Enter Buyer Username:
+-Enter Seller Username:
+-Enter Credit Amount:
+-Refund Issued Successfully
+-Enter Command:
++Invalid: Invalid credit amount
++Error: Invalid Command
++Enter Buyer Name:
++Enter Seller Name:
++Enter Credit to Transfer:
++Invalid: Buyer does not exist
++Logged out
+
+
+--------------------------------------------------
+

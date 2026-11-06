@@ -38,7 +38,7 @@ void FrontEnd::processCommand(const std::string& command) {
 
     static const char* known[] = {
         "create", "delete", "sell", "buy", "refund", "add credit",
-        "list games", "list accounts"
+        "list games", "list accounts", "search users"
     };
     if (std::find(std::begin(known), std::end(known), command) == std::end(known)) {
         cout << "Error: Invalid Command\n";

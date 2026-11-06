@@ -1,0 +1,16 @@
+Enter Username:
+Logged in as User001
+Buyer03 | BS | 12345.67
+Buyer02 | BS | 99.99
+Valid_Std_Name | FS | 400.00
+Valid_Standard | FS | 1000.00
+Valid_Admin_Nam | AA | 400.00
+Valid_Buyer_Nam | BS | 5000.00
+Valid_Seller_Nm | SS | 5000.00
+Admin01 | AA | 100000.00
+Admin001 | AA | 25500.75
+User001 | FS | 10.00
+Username | FS | 5000.00
+User_Max_Cred | FS | 999999.00
+Seller01 | SS | 5000.00
+Logged out

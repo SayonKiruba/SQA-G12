@@ -1,0 +1,9 @@
+Enter Username:
+Logged in as User001
+Persona 4 Golden | User001 | 20.00
+Elden Ring | User001 | 80.00
+Chrono Trigger | User001 | 30.00
+Stardew Valley | User001 | 70.00
+Pokémon HeartGold | User001 | 50.00
+Expensive Game | User001 | 999.99
+Logged out
