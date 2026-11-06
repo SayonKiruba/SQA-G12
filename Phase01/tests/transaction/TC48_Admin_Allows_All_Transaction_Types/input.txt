@@ -4,7 +4,8 @@ Create
 New_User_Name3
 FS
 Add Credit
-100.00
+400.00
+Valid_Std_Name
 Refund
 Valid_Buyer_Nam
 Valid_Seller_Nm

@@ -1,17 +1,13 @@
-Enter Command:
 Enter Username:
-Logged in as 'Username'
-Enter Command:
-Enter New Username:
-Enter User Type:
-User Created Successfully
-Enter Command:
-Enter Username to Add Credit:
+Logged in as Admin01
+Enter Username:
+Enter Type:
+created New_User_Name3
 Enter Amount to Add:
-Credit Added Successfully
-Enter Command:
-Enter Buyer Username:
-Enter Seller Username:
-Enter Credit Amount:
-Refund Issued Successfully
-Enter Command:
+Enter Username to add credit to:
+Credit Added to 'Valid_Std_Name' Successfully
+Enter Buyer Name:
+Enter Seller Name:
+Enter Credit to Transfer:
+Transfer Successful
+Logged out
