@@ -3,16 +3,16 @@ project(SQA_G12)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(Phase02)
+include_directories(Phase03)
 
 add_executable(SQA_G12
-        Phase02/main.cpp
-        Phase02/FrontEnd.h
-        Phase02/User.cpp
-        Phase02/User.h
-        Phase02/Game.h
-        Phase02/FrontEnd.cpp
-        Phase02/TransactionManager.cpp
-        Phase02/TransactionManager.h
-        Phase02/FileManager.cpp
-        Phase02/FileManager.h)
+        Phase03/Frontend/main.cpp
+        Phase03/Frontend/FrontEnd.h
+        Phase03/Frontend/User.cpp
+        Phase03/Frontend/User.h
+        Phase03/Frontend/Game.h
+        Phase03/Frontend/FrontEnd.cpp
+        Phase03/Frontend/TransactionManager.cpp
+        Phase03/Frontend/TransactionManager.h
+        Phase03/Frontend/FileManager.cpp
+        Phase03/Frontend/FileManager.h)
