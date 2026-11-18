@@ -1,0 +1,4 @@
+users - json
+available-games + games-collection - csv
+transaction - transaction? (read line by line with termination line between each)
+record time with transaction
