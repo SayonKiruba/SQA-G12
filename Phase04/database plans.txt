@@ -1,6 +1,6 @@
 Yusuf:
-available-games + games-collection - csv
+available-games + games-collection
 Sayon:
-users - json
+users
 transaction - transaction? (read line by line with termination line between each)
 record time with transaction
